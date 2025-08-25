@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 0%);
+    padding: 1.8rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+    
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-items {
+    margin-left: 1.25rem;
+    
+}
+
+.nav-link{
+   text-decoration: none;
+   color: hsl(0, 0%, 70%);
+   font-size: 1rem;
+   
+}
+
+.navbar-items a:hover {
+    color: hsl(0, 0%, 55%);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.profile {
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 6rem;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 70%);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 95%);
+    
+    
+}
+
+#name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+#name-title a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(53, 80%, 50%);
+    display: block;
+    padding-top: 0.5rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+}
+
+#name-title a:hover {
+    background-color: hsl(53, 80%, 60%);
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 4rem;
+    padding-left: 16rem;
+}
+
+#profile-picture {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 1.5rem;
+    
+}
+
+.icons-container {
+    display: flex;
+    padding: 1.5rem 0;
+    gap: 1.25rem;
+    
+}
+
+.icons-container a {
+    font-size: 2.5rem;
+    color: hsl(53, 80%, 50%);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    
+}
+
+.icons-container a:hover {
+    color: hsl(53, 80%, 60%);
+    transform: scale(1.2);
+    
+}
+
+#about-container {
+    padding: 7rem 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-heading {
+    font-size: 1.6rem;
+    
+}
+
+#circular-img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    
+}
+
+.intro {
+    width: 45%;
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 70%);
+    padding-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.project-container {
+    padding: 7rem 6rem;
+}
+
+.subheading {
+    color: hsl(0, 0%, 70%);
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.cards {
+    max-width: 22rem;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.25rem;
+    padding: 0 2rem;
+}
+
+.card {
+    border: 1px solid hsl(0, 0%, 15%);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 10%);
+    padding: 1rem;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px hsl(0, 0%, 30%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px hsl(0, 0%, 35%);
+}
+
+.card h3 {
+    
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 87%);
+    font-size: 1.3rem;
+}
+
+.card p {
+    padding-bottom: 1rem;
+    color: hsl(0, 0%, 70%);
+    font-size: 1.2rem;
+}
+
+.card-img {
+    
+    width: 100%;
+    height: 12rem;
+    border-radius: 0.25rem;
+
+}
+
+.card footer {
+    text-align: start;
+    padding-bottom: 0.5rem;
+    text-wrap: balance;
+}
+
+.project-skills {
+    border: 1px solid #4682A9;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 0.90rem;
+    color: #407198;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container h2 {
+    font-size: 4rem;
+}
+
+.contact-container h3 {
+    font-size: 1.5rem;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    border: 2px solid hsl(53, 80%, 50%);
+    display: block;
+    padding: 0.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    color: hsl(0, 0%, 95%);
+}
+
+.contact-container a:hover {
+    background-color: hsl(53, 80%, 60%);
+    color: hsl(0, 0%, 0%);
+}
+
+footer {
+    text-align: center;
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 95%);
+}
